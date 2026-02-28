@@ -5,6 +5,7 @@ File Name: styles.css
 */
 
 /* CSS reset */
+
 body,
 header,
 nav,
@@ -32,8 +33,9 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #000;
-    height: 190px;
+    background-color: black;
+    width: 100%;
+    float: none;
 }
 
 header img {
@@ -67,25 +69,24 @@ nav li a {
     text-decoration: none;
 }
 
-/* Show mobile class, hide tablet-desktop class */
-.mobile {
-    display: block;
-}
-
-.tablet-desktop {
-    display: none;
+#hero {
+    clear: both;
 }
 
 main {
     clear: left;
     background-color: #fff;
     padding: 2%;
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-family: 'Roboto Slab', serif;
 }
 
-.hours {
-    margin-left: 10%;
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
 }
 
 .tel-link {
@@ -104,40 +105,34 @@ main {
     display: block;
 }
 
-.action {
-    font-size: 1.35em;
-    color: #666600;
-    font-weight: bold;
-}
-
-#weights,
-#cardio,
-#training {
-    margin: 0 2%;
+.hours {
+    margin-left: 10%;
 }
 
 .round {
     border-radius: 8px;
 }
 
-/* #exercises {
-clear: left;
-border-top: 1px solid #000;
-border-bottom: 1px solid #000;
-background-color: #f2f2f2;
-padding: 1% 2%;
+main h2 {
+    margin-bottom: 0.8em;
 }
 
-#exercises dt {
-font-weight: bold;
+main h3 {
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
 }
 
-#exercises dd {
-padding: 0.5% 1% 2% 0;
-} */
+main p {
+    margin-bottom: 0.6em;
+}
+
+main ul {
+    margin-left: 1.2em;
+    margin-bottom: 0.8em;
+}
 
 footer p {
-    font-size: 0.75em;
+    font-size: 0.85em;
     text-align: center;
     color: #fff;
     padding: 0 1em;
@@ -145,14 +140,5 @@ footer p {
 
 footer p a {
     color: #fff;
-    text-decoration: none;
-}
-
-#contact {
-    text-align: center;
-}
-
-#contact a {
-    color: #666600;
     text-decoration: none;
 }

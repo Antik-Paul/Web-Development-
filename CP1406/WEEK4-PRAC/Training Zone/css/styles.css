@@ -56,9 +56,6 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover {
-    text-decoration: underline;
-}
 
 
 #hero {
@@ -66,7 +63,7 @@ nav li a:hover {
 }
 
 main {
-    clear: both;
+    clear: left;
     background-color: #fff;
     padding: 2%;
     font-size: 1.1em;
