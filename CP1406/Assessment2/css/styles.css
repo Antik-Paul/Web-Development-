@@ -1,0 +1,303 @@
+/*
+Author: Antik Paul
+Date: 15/03/2026
+File Name: styles.css
+*/
+
+/* CSS Reset */
+
+body,
+header,
+nav,
+main,
+footer,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+img,
+section,
+div,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* General Styles */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f9;
+    color: #1f1f1f;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+#container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    font-size: 0;
+}
+
+header,
+nav,
+main,
+footer {
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    background-color: #0d3b66;
+    width: 18%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    height: 70px;
+    text-align: center;
+}
+
+header img {
+    width: 95px;
+    margin-top: 12px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #0d3b66;
+    width: 82%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    padding-right: 2%;
+    line-height: 70px;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    background-color: #145da0;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+/* Main */
+
+main {
+    padding: 2%;
+}
+
+/* Hero Banner */
+
+.hero img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 2em;
+    color: #0d3b66;
+    margin-bottom: 0.8em;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #145da0;
+    margin-bottom: 0.6em;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #0d3b66;
+    margin-bottom: 0.5em;
+}
+
+/* Paragraphs */
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+ul {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.6em;
+}
+
+/* Links */
+
+a {
+    color: #145da0;
+}
+
+a:hover {
+    color: #0d3b66;
+}
+
+/* Feature Sections */
+
+.welcome,
+.feature-banner,
+.intro,
+.package,
+.article-topics,
+.article-content,
+.announcement-box,
+.contact-box,
+.about-box {
+    margin-bottom: 2em;
+}
+
+.feature-banner,
+.package,
+.article-topics,
+.article-content,
+.announcement-box,
+.contact-box,
+.about-box {
+    background-color: #f9fbfc;
+    padding: 1.2em;
+    border-radius: 8px;
+}
+
+.feature-banner {
+    text-align: center;
+}
+
+.feature-banner img,
+.article-image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+/* Services */
+
+.service {
+    margin-bottom: 2em;
+    background-color: #f9fbfc;
+    padding: 1em;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.service img {
+    width: 32%;
+    float: left;
+    margin-right: 3%;
+    border-radius: 8px;
+}
+
+.service div {
+    width: 65%;
+    float: left;
+}
+
+/* Staff */
+
+.staff {
+    margin-bottom: 2em;
+    background-color: #f9fbfc;
+    padding: 1em;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.staff img {
+    width: 32%;
+    float: left;
+    margin-right: 3%;
+    border-radius: 8px;
+}
+
+.staff div {
+    width: 65%;
+    float: left;
+}
+
+/* Footer */
+
+footer {
+    background-color: #0d3b66;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.2em;
+    margin-top: 2em;
+}
+
+/* Mobile Layout */
+
+@media screen and (max-width: 768px) {
+
+    header,
+    nav {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        padding-right: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+        border-top: 1px solid #ffffff;
+    }
+
+    .hero img {
+        height: auto;
+    }
+
+    .service img,
+    .service div,
+    .staff img,
+    .staff div {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    .service img,
+    .staff img {
+        margin-bottom: 1em;
+    }
+
+}
